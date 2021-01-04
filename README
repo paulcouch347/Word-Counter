@@ -1,0 +1,18 @@
+Author: Paul Couch
+Date: 4/6/2020
+Running the Program: To run the program, compile using g++ or use the 
+	run command in the Makefile, which passes the file data.txt to
+	the program through standard input. The program takes a textfile
+	through standard input, if one isn't passed in the program won't
+	do anything.
+Purpose: The program takes a textfile from standard input and counts
+	the words in the file. It then outputs two lists. The first in 
+	alphabetical order; the second in numerical order with ties being
+	sorted alphabetically. The words and their counts are stored in a
+	hash table, which are then placed into an array and sorted using
+	quicksort. My hashing method adds up the ASCII values of each
+	character in the word and then modulo's it by 23, the size of
+	the hash table.
+Limitations: None
+Outside Help: I used the textbook section on hashing (p. 193 - p. 200)
+	to help construct my hash table. 
